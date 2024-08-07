@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="quiz-container">
+      <header>
+        <span id="question-number">1/10</span>
+        <span id="timer">30</span>
+        <span id="score">Score: 0</span>
+      </header>
+      <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+
+      <main>
+        <h2 id="question-text">How does Kendrick react to moving objects?</h2>
+        <div class="options">
+          <label>
+            <input type="radio" name="answer" value="Tracks with eyes" />
+            <span>Tracks with eyes</span>
+          </label>
+          <label>
+            <input type="radio" name="answer" value="Tries to follow" />
+            <span>Tries to follow</span>
+          </label>
+          <label>
+            <input type="radio" name="answer" value="Gets excited" />
+            <span>Gets excited</span>
+          </label>
+          <label>
+            <input type="radio" name="answer" value="Different reaction" />
+            <span>Different reaction</span>
+          </label>
+        </div>
+      </main>
+      <footer>
+        <button id="next-button">Continue</button>
+      </footer>
+    </div>
+    <div
+      class="scoreboard-container"
+      id="scoreboard-container"
+      style="display: none"
+    >
+      <h2>Scoreboard</h2>
+      <table id="scoreboard">
+        <thead>
+          <tr>
+            <th>Question</th>
+            <th>Your Answer</th>
+            <th>Correct Answer</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button id="restart-button">Restart Quiz</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
